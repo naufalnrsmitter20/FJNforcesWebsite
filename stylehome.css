@@ -6,6 +6,21 @@
     font-family: "Lilita One", cursive;
     font-size: 40px;
   }
+  
+  .logo {
+    font-size:200%;
+    zoom: -3; /* for easier readability */
+  }
+  
+  .logo:hover{
+    color: green;
+    fill: green;
+  }
+
+  .logo svg {
+    display: inline-block;
+   vertical-align: middle;
+  }
   p.itim {
     font-size: 35px;
     font-family: "Itim", cursive;
