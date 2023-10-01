@@ -1,3 +1,13 @@
-nav .container{
-    background-color: #71FFAA;
-}
+.navbar1 {
+    background-color: #71ffaa;
+    height: 92px;
+  }
+  .lilita-one {
+    font-family: "Lilita One", cursive;
+    font-size: 40px;
+  }
+  p.itim {
+    font-size: 35px;
+    font-family: "Itim", cursive;
+  }
+  
