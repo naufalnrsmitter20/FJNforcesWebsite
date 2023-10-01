@@ -5,6 +5,7 @@
   .lilita-one {
     font-family: "Lilita One", cursive;
     font-size: 40px;
+    letter-spacing: 5%;
   }
   
   .logo {
@@ -24,5 +25,6 @@
   p.itim {
     font-size: 35px;
     font-family: "Itim", cursive;
+    letter-spacing: 5%;
   }
   
