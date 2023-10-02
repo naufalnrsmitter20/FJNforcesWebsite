@@ -1,0 +1,38 @@
+.navbar1 {
+    background-color: #71ffaa;
+    height: 92px;
+  }
+  .lilita-one {
+    font-family: "Lilita One", cursive;
+    font-size: 40px;
+    letter-spacing: 5%;
+  }
+  
+  .logo {
+    font-size:200%;
+    zoom: -3; /* for easier readability */
+  }
+  
+  .logo:hover{
+    color: green;
+    fill: green;
+  }
+
+  .logo svg {
+    display: inline-block;
+   vertical-align: middle;
+  }
+  p.itim {
+    font-size: 35px;
+    font-family: "Itim", cursive;
+    letter-spacing: 5%;
+    padding: 43px;
+  }
+.container1 {
+  background-color: #B5FFF2;
+  height: 830px;
+}
+.container2 {
+  background-color: #AFDEFF;
+  height: 941px;
+}  
