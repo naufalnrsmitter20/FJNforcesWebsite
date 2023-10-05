@@ -8,6 +8,11 @@
     letter-spacing: 5%;
   }
   
+  .homebg {
+    background: url(./src/homebg.png); 
+    background-repeat: no-repeat; 
+ }
+
   .logo {
     font-size:200%;
     zoom: -3; /* for easier readability */
