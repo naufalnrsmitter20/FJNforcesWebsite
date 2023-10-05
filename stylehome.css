@@ -11,6 +11,7 @@
   .homebg {
     background: url(./src/homebg.png); 
     background-repeat: no-repeat; 
+    background-position: 100%;
  }
 
   .logo {
@@ -21,6 +22,15 @@
   .logo:hover{
     color: green;
     fill: green;
+  }
+
+  @media only screen and (max-width: 990px) {
+    .navbar-collapse {
+      background: #71ffaa;
+    }
+    .navbar-collapse li{
+      border: #9ca3af;
+    }
   }
 
   .logo svg {
