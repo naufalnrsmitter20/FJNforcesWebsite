@@ -3,15 +3,11 @@ font-family: 'Mate SC', serif;
 font-family: 'Maven Pro', sans-serif;
  */
 
-.bg-image-jumbotron {
+.navigasi {
   background-image: url(img/istockphoto-1566475796-1024x1024-transformed.jpeg);
-  width: 100%;
-  height: 894px;
-  opacity: 40%;
+  width: fit-content;
+  height: 800px;
   z-index: 1;
-}
-nav.navbar {
-  z-index: 2;
 }
 nav .navbar-brand {
   font-family: "Maven Pro", sans-serif;
@@ -29,4 +25,31 @@ nav li.nav-item a {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.25px;
+}
+section.section1 {
+  z-index: 3;
+  margin-top: 250px;
+}
+section.section1 p.judul1 {
+  font-family: Mate SC;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+section.section1 p.isi1 {
+  font-family: Mate;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+section.section1 a.btn {
+  width: 249px;
+  height: 75px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: #122024;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
