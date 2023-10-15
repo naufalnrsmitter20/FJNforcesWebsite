@@ -454,21 +454,6 @@
         right: 0;
         bottom: 0;
       } */
-      .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0);
-        z-index: 999;
-        transition: 0.7s;
-      }
-      .overlay:target {
-        width: auto;
-        height: auto;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.8);
-      }
     </style>
   </head>
   <body>
@@ -676,7 +661,7 @@ l29 0 2 312 3 312 33 10 c17 5 32 15 32 22 0 11 -25 14 -115 14 -92 0 -115 -3
     <div>
       <!-- cart -->
       <section id="cardess gambar" class="overlay">
-        <div class="container">
+        <div class="container d-flex justify-content-center mt-5">
           <div class="master-container">
             <div class="cardq cart">
               <label class="title">Your cart</label>
