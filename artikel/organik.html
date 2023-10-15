@@ -15,7 +15,23 @@
         width: 1118px;
         font-family: Mate;
       }
+      .hover:hover {
+        opacity: 75%;
+        color: #133406;
+      }
+      .carousel div {
+        border-radius: 20px;
+      }
+      .owl-dots {
+        margin-top: 200px;
+        height: 15px;
+        width: 45px;
+        border: 2px solid #31af00 !important;
+      }
     </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navigasi d-flex align-items-start">
@@ -46,13 +62,47 @@
       <div class="container z-1 d-flex align-items-center mt-4 me-5" style="height: 413px">
         <p class="text-white display-2 fw-medium" style="letter-spacing: 3.5px; font-family: Mate sc">Sampah Organik</p>
       </div>
-      <!-- gambar -->
     </nav>
-
+    <!-- gambar -->
+    <section id="carousel" style="display: flex; align-items: center">
+      <div class="wrapper" style="position: relative; top: -100px; left: 0">
+        <div class="carousel d-flex owl-carousel" style="max-width: 1520px">
+          <div class="main" style="width: 320px; height: 182px; background-image: url(../img/pexels-mali-maeder-802221.jpg); background-size: 320px 182px; margin-left: -100px"></div>
+          <div class="main" style="width: 320px; height: 182px; background-image: url(../img/pexels-yogendra-singh-2480807.jpg); background-size: 320px 182px; margin-left: -100px"></div>
+          <div class="main" style="width: 320px; height: 182px; background-image: url(../img/pexels-tom-fisk-3174350.jpg); background-size: 320px 182px; margin-left: -100px"></div>
+          <div class="main" style="width: 320px; height: 182px; background-image: url(../img/pexels-wendelin-jacober-1411426.jpg); background-size: 320px 182px; margin-left: -100px"></div>
+          <div class="main" style="width: 320px; height: 182px; background-image: url(../img/flea-market-2759043_1280.jpg); background-size: 320px 182px; margin-left: -100px"></div>
+        </div>
+      </div>
+    </section>
     <!-- carousel -->
 
+    <script>
+      $(".carousel").owlCarousel({
+        margin: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          600: {
+            items: 2,
+            nav: false,
+          },
+          1000: {
+            items: 3,
+            nav: false,
+          },
+        },
+      });
+    </script>
+
     <!-- article -->
-    <section id="article" style="margin-top: 260px">
+    <section id="article" style="margin-top: 45px">
       <div class="container" style="width: 1066px">
         <h4 style="font-family: Mate SC; font-size: 40px; letter-spacing: 2px">Sampah Organik: Pengertian, Jenis, Contoh, dan Dampaknya</h4>
         <br />
@@ -247,11 +297,64 @@
             <p class="d-inline" style="color: #2e2e2e; font-family: Mate; font-size: 25px; letter-spacing: 1.25px">Tulis sebagai example@gmail.com</p>
           </li>
         </ul>
+        <div>
+          <textarea
+            placeholder="Tulis Komentar Anda Disini"
+            class="form-control"
+            aria-label="With textarea"
+            style="
+              width: 1099px;
+              height: 270px;
+              border-radius: 20px;
+              border: 3px solid #122024;
+              background: rgba(18, 32, 36, 0.19);
+              margin-left: 155px;
+              padding: 10px;
+              box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+              font-family: Mate;
+              font-size: 20px;
+            "
+          ></textarea>
+        </div>
+        <div class="content" style="margin-top: 97px; margin-bottom: 62px">
+          <div class="garis bg-black" style="width: 1118px; height: 2px; margin-left: 125px"></div>
+        </div>
+        <ul class="justify-content-start mt-5" style="margin-bottom: 30px">
+          <li class="me-3"><p class="d-block" style="font-family: Mate; font-size: 25px; letter-spacing: 1.25px">Komentar :</p></li>
+          <li class="d-inline" style="margin-left: 37px; margin-right: 9px; position: relative; top: 10px">
+            <a href=""
+              ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 40 41" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M27.2725 14.6219C27.2725 18.6596 24.0163 21.9329 19.9998 21.9329C15.9832 21.9329 12.7271 18.6596 12.7271 14.6219C12.7271 10.5842 15.9832 7.31104 19.9998 7.31104C24.0163 7.31104 27.2725 10.5842 27.2725 14.6219ZM23.6361 14.6219C23.6361 16.6409 22.0081 18.2774 19.9998 18.2774C17.9914 18.2774 16.3634 16.6409 16.3634 14.6219C16.3634 12.6031 17.9914 10.9665 19.9998 10.9665C22.0081 10.9665 23.6361 12.6031 23.6361 14.6219Z"
+                  fill="black"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20 0C8.95431 0 0 9.00132 0 20.105C0 31.2086 8.95431 40.21 20 40.21C31.0456 40.21 40 31.2086 40 20.105C40 9.00132 31.0456 0 20 0ZM3.63636 20.105C3.63636 23.9253 4.93191 27.4415 7.10542 30.2337C10.0954 26.299 14.8114 23.7604 20.1173 23.7604C25.3542 23.7604 30.0167 26.2335 33.0118 30.0813C35.1145 27.3141 36.3636 23.8562 36.3636 20.105C36.3636 11.0202 29.0375 3.65545 20 3.65545C10.9626 3.65545 3.63636 11.0202 3.63636 20.105ZM20 36.5545C16.0905 36.5545 12.5012 35.1763 9.68667 32.8768C11.9882 29.5748 15.8019 27.4159 20.1173 27.4159C24.3789 27.4159 28.1515 29.5216 30.4615 32.7545C27.6253 35.1273 23.9784 36.5545 20 36.5545Z"
+                  fill="black"
+                /></svg
+            ></a>
+          </li>
+          <li class="d-inline" style="font-family: Mate; font-size: 12px; letter-spacing: 0.75px; position: absolute; margin-left: 5px">
+            Minggu, 08 Oktober 2023 <br /><span style="font-family: Mate; font-size: 22px"> Dari x3mnaufalnabilramadhan@gmail.com </span>
+          </li>
+          <li>
+            <br />
+            <p style="position: relative; margin-left: 85px; margin-right: 140px">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue neque ut tincidunt volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed id euismod nibh, id accumsan
+              nisl. Donec posuere imperdiet ipsum semper molestie. Etiam at malesuada urna. In scelerisque dignissim gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras hendrerit, tellus ut
+              ultricies mollis, magna sapien elementum elit, eu posuere mi sem nec nunc. Pellentesque venenatis nec lectus consequat malesuada.
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- Footer -->
-    <section id="sub-footer" style="background: #122024; padding-bottom: 65px">
+    <section id="sub-footer" style="background: #122024; padding-bottom: 65px; margin-top: 250px">
       <div class="container pt-5">
         <p class="text-white position-relative pt-5 ps-5" style="font-family: Mate SC; font-size: 30px; letter-spacing: 1.5px; font-weight: 400; margin-bottom: 65px">CONTACT US</p>
       </div>
